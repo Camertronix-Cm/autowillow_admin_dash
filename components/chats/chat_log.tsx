@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class chat_log extends Component {
-  render() {
+export const  Chatlog = () =>{
+  
     return (
       <div>chat_log</div>
     )
-  }
+ 
 }
