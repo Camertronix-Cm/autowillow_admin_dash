@@ -73,6 +73,13 @@ export const SidebarWrapper = () => {
                         href="robots"
  
                      />
+                     <SidebarItem
+                        isActive={router.pathname === '/robot'}
+                        title="Robot"
+                        icon={<BsRobot />}
+                        href="robot"
+                        
+                     />
 
 
                      <CollapseItems
