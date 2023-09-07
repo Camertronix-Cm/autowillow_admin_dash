@@ -63,12 +63,15 @@ export const SidebarWrapper = () => {
                         isActive={router.pathname === '/accounts'}
                         title="Accounts"
                         icon={<AccountsIcon />}
+                        href="accounts"
                      />
                      <SidebarItem
                         isActive={router.pathname === '/robots'}
                         title="Robots"
                         icon={<BsRobot />}
+ 
                         href="robots"
+ 
                      />
 
 
@@ -82,6 +85,7 @@ export const SidebarWrapper = () => {
                         isActive={router.pathname === '/chats'}
                         title="Chats"
                         icon={<BsChatDots />}
+                        href="chats"
                      />
 
                      <SidebarItem
