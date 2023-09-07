@@ -10,6 +10,7 @@
    },
    "dependencies": {
       "@flaticon/flaticon-uicons": "^2.4.0",
+      "@georgedrpg/pannellum-react-next": "^1.2.5",
       "@nextui-org/react": "^1.0.0-beta.10",
       "apexcharts": "^3.35.5",
       "axios": "^1.5.0",
@@ -17,11 +18,14 @@
       "next": "12.3.0",
       "next-cloudinary": "^4.20.0",
       "next-themes": "^0.2.1",
+      "pannellum-react": "^1.2.4",
       "react": "18.2.0",
       "react-apexcharts": "^1.4.0",
       "react-dom": "18.2.0",
+ 
       "react-hook-form": "^7.46.1",
       "react-icons": "^4.10.1"
+ 
    },
    "devDependencies": {
       "@types/node": "18.7.18",

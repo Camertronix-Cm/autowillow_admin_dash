@@ -69,7 +69,9 @@ export const SidebarWrapper = () => {
                         isActive={router.pathname === '/robots'}
                         title="Robots"
                         icon={<BsRobot />}
-                        
+ 
+                        href="robots"
+ 
                      />
 
 
