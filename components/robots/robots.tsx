@@ -5,21 +5,9 @@ import {Breadcrumbs, Crumb, CrumbLink} from '../breadcrumb/breadcrumb.styled';
 import {HouseIcon} from '../icons/breadcrumb/house-icon';
 import {UsersIcon} from '../icons/breadcrumb/users-icon';
 import {Flex} from '../styles/flex';
-import { Pannellum, PannellumVideo } from "@georgedrpg/pannellum-react-next";
-import "@georgedrpg/pannellum-react-next/es/css/video-js.css";
-import "@georgedrpg/pannellum-react-next/es/css/pannellum.css";
-import "@georgedrpg/pannellum-react-next/es/css/style-textInfo.css";
+import { BsArrowsFullscreen, BsArrowUp, BsArrowDown, BsArrowLeft, BsArrowRight, BsArrowUpLeft, BsArrowUpRight, BsArrowDownLeft, BsArrowDownRight } from "react-icons/bs";
+
 export const Robots = () => {
-   useEffect(() => {
-      const viewer = pannellum.viewer('panorama', {
-        type: 'equirectangular',
-        panorama: '../../assets/images/PanoramaInterior2.png',
-      });
-  
-      return () => {
-        viewer.destroy();
-      };
-    }, []);
    return (
       <Flex
          css={{
@@ -53,27 +41,23 @@ export const Robots = () => {
          </Breadcrumbs>
 
          <Text h3>All Accounts</Text>
-         <Pannellum
-            width="100%"
-            height="500px"
-            image={myImage}
-            pitch={10}
-            yaw={180}
-            hfov={110}
-            autoLoad
-            showZoomCtrl={false}
-            onLoad={() => {
-               console.log("panorama loaded");
-            }}
-         >
-            <Pannellum.Hotspot
-               type="custom"
-               pitch={31}
-               yaw={150}
-               handleClick={(evt, name) => console.log(name)}
-               name="hs1"
-            />
-         </Pannellum>
+         <h3><BsArrowsFullscreen /></h3>
+         <ul>
+            <li>
+               <h3> <BsArrowLeft /> </h3>
+            </li>
+            <li>
+               <h3> <BsArrowRight /> </h3>
+            </li>
+            <li>
+               <h3> <BsArrowUp /> </h3>
+            </li>
+            <li>
+               <h3> <BsArrowDown /> </h3>
+            </li>
+         </ul>
+         <BsArrowUpLeft /> <BsArrowUpRight /> 
+         <BsArrowDownLeft /> <BsArrowDownRight />
       </Flex>
    );
 };
