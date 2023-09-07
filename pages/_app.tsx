@@ -3,6 +3,7 @@ import type {AppProps} from 'next/app';
 import {createTheme, NextUIProvider} from '@nextui-org/react';
 import {ThemeProvider as NextThemesProvider} from 'next-themes';
 import {Layout} from '../components/layout/layout';
+import "leaflet/dist/leaflet.css";
 
 const lightTheme = createTheme({
    type: 'light',
